@@ -316,4 +316,62 @@ ul {
         }
     }
 }
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 101px;
+    &__interno {
+        max-width: 393px;
+        &_txt {
+            margin: 18px 0 31px 0;
+            color: $colorTxt;
+            font-family: $fontText;
+            font-size: 22px;
+            line-height: 33px;
+            letter-spacing: 0.22px;
+        }
+    }
+    &__social-icons {
+        display: flex;
+        gap: 54px;
+    }
+    &__pages {
+        width: 125px;
+        &_txt {
+            margin-bottom: 9px;
+            font-size: 25px;
+            line-height: 31.25px;
+        }
+    }
+    &__pages-list {
+        &_link {
+            color: $colorTxt;
+            font-family: $fontText;
+            font-size: 22px;
+            line-height: 66px;
+            letter-spacing: 0.22px;
+        }
+    }
+    &__services {
+        width: 120px;
+    }
+    &__contact {
+        &_title {
+            margin-bottom: 26px;
+            font-size: 25px;
+            line-height: 31.25px;
+        }
+        &_txt {
+            margin-bottom: 33px;
+            color: $colorTxt;
+            font-family: $fontText;
+            font-size: 22px;
+            line-height: 33px;
+            letter-spacing: 0.22px;
+        }
+        &_txt:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
 

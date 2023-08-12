@@ -317,4 +317,59 @@ ul {
   line-height: 24px;
   letter-spacing: 0.16px;
   text-transform: capitalize;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 101px;
+}
+.footer-content__interno {
+  max-width: 393px;
+}
+.footer-content__interno_txt {
+  margin: 18px 0 31px 0;
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+.footer-content__social-icons {
+  display: flex;
+  gap: 54px;
+}
+.footer-content__pages {
+  width: 125px;
+}
+.footer-content__pages_txt {
+  margin-bottom: 9px;
+  font-size: 25px;
+  line-height: 31.25px;
+}
+.footer-content__pages-list_link {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  line-height: 66px;
+  letter-spacing: 0.22px;
+}
+.footer-content__services {
+  width: 120px;
+}
+.footer-content__contact_title {
+  margin-bottom: 26px;
+  font-size: 25px;
+  line-height: 31.25px;
+}
+.footer-content__contact_txt {
+  margin-bottom: 33px;
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+.footer-content__contact_txt:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */
