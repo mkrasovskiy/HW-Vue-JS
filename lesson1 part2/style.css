@@ -1,0 +1,9 @@
+.active {
+  transform: rotate(180deg);
+}
+li {
+  margin-bottom: 10px;
+}
+li:hover {
+  cursor: pointer;
+}

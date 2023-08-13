@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 1. Создать кнопку "Перевернуть". При клике на кнопку текст кнопки, должен перевернуться и отобразиться в обратном порядке. -->
+        <button v-bind:class="classObj()" v-on:click="flipText">{{ message }}</button>
+
+        <!-- 2. Есть список элементов. Пользователь может добавлять новые элементы списка с текстом “Новый элемент списка” нажав на кнопку "Добавить". -->
+        <div style="margin-bottom: 30px"></div>
+        <button @click="addElement">Добавить</button>
+        <ul>
+            <li v-for="(item, index) in items" @click="removeElement">{{ newElement }}</li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                message: 'Перевернуть',
+                isActive : false,
+                items: [],
+                newElement: 'Новый элемент списка',
+            },   
+            methods: {
+                classObj() {
+                    return {
+                        active: this.isActive
+                    }   
+                },
+                flipText() {
+                    this.isActive =! this.isActive
+                },
+                addElement() {
+                    this.items.push(this.newElement)
+                },
+                removeElement(index) {
+                    this.items.splice(index, 1)
+                }
+            },     
+        })
+    </script>
+</body>
+</html>
