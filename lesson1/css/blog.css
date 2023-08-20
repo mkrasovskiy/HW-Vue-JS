@@ -1,0 +1,117 @@
+.bunner {
+  margin-bottom: 200px;
+}
+.bunner__img {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+.bunner__content {
+  position: absolute;
+  top: 179px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 41px 78px;
+  text-align: center;
+  background: #fff;
+  border-radius: 37px 37px 0 0;
+}
+.bunner__content_title {
+  font-size: 50px;
+  line-height: 62.5px;
+}
+.bunner__content_txt {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+
+.blog__latest-post {
+  margin-bottom: 150px;
+}
+.blog__latest-post_title {
+  margin-bottom: 27px;
+  font-size: 50px;
+  line-height: 62.5px;
+  letter-spacing: 1px;
+}
+.blog__latest-post-wrp {
+  display: flex;
+  gap: 65px;
+  padding: 22px;
+  border: 1px solid #E7E7E7;
+  border-radius: 62px;
+}
+.blog__latest-post-img {
+  border-radius: 50px;
+}
+.blog__latest-post-content {
+  margin: 51px 34px 52px 0;
+}
+.blog__latest-post-content_title {
+  margin-bottom: 22px;
+  font-size: 25px;
+  line-height: 31.25px;
+  letter-spacing: 0.5px;
+}
+.blog__latest-post-content_txt {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+.blog__latest-post-content_description {
+  margin-bottom: 41px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 469px;
+  min-height: 198px;
+}
+.blog__latest-post-content_date {
+  display: flex;
+  justify-content: space-between;
+}
+.blog__latest-post-content_date-txt {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  text-transform: capitalize;
+}
+.blog__news {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.blog__news-wrp {
+  display: flex;
+  justify-content: space-between;
+}
+.blog__pagination {
+  margin: 51px auto 200px auto;
+  display: flex;
+  gap: 20px;
+}
+.blog__pagination-svg_circle {
+  stroke: #CDA274;
+  fill: #fff;
+}
+.blog__pagination-svg_fill {
+  fill: #292F36;
+}
+.blog__pagination-svg_path {
+  stroke: #292F36;
+}
+.blog__pagination-svg_circle:hover {
+  stroke: none;
+  fill: #F4F0EC;
+}
+.blog__pagination-svg_circle:active {
+  stroke: #CDA274;
+  fill: #fff;
+}/*# sourceMappingURL=blog.css.map */
