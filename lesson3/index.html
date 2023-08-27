@@ -5,141 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .blog-details {
-            margin: 32px auto;
-            width: 500px;
-            text-align: center;
-        }
-        .blog {
-            margin: 32px auto;
-            width: 500px;
+        body {
             text-align: center;
         }
     </style>
-</head>
 <body>
-
+    
     <div id="app">
-        <blog-details/>
+        
+        <blog-details></blog-details>
+        
+        <component is="blogs-list"></component>
+        
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="comp.js"></script>
     <script>
-        
-    Vue.component('blog-details', {
-
-        data() {
-            return {
+        new Vue({
+            el: '#app',
+            data: {
                 
-            }
-        },
-        template: `
-          <div class="blog-details">
-            <h2>Let’s Get Solution for Building Construction Work</h2>
-            <div>
-                <img src="photo.jpg" alt="photo">
-                <p>26 December,2022 </p>
-                <p>Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable.
-                Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
-            </div>
-            <blogs-list/>
-          </div>
-        `
-    });
-
-    
-    Vue.component('blogs-list', {
-        template: `
-        <div>
-            <a href="#" v-for='tag in tags'>
-                <button>{{ tag }}</button>
-            </a>
-            <div>
-                <blog
-                v-for='blog in bloglist'
-                    :key="blog.id"
-                    :blog="blog"
-                />
-            </div>
-        </div>
-        `,
-        data() {
-            return {
-                tags: ['Kitchen', 'Bedroom', 'Building', 'Architecture'],
-                bloglist: [
-                    {
-                        id: 1,
-                        tag: 'Kitchen',
-                        article: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'
-                    },
-                    {
-                        id: 2,
-                        tag: 'Bedroom',
-                        article: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'
-                    },
-                    {
-                        id: 3,
-                        tag: 'Building',
-                        article: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'
-                    },
-                ],
-                input: '',
-            }
-        },
-        computed: {
-           
-        },
-        
-    });
-    Vue.component('blog', {
-        props: ['blog'],
-        template: `
-        <div>
-            <h1>{{ blog.tag }}</h1>
-            <p>{{ blog.article }}</p>    
-        </div>
-        `
-    });
-
-
-    // Vue.component('filter-change', {
-    //     template: `
-    //         <div>
-    //             <input type="text" v-model="input"/>
-    //             <ul>
-    //                 <li v-for='item in changeInput' :key='item.id'>{{ item.data }}</li>
-    //             </ul>
-    //         </div>
-    //         `,
-    //     data() {
-    //         return {
-    //             itemList: [
-    //                 {
-    //                     id: 1,
-    //                     data: '011212',
-    //                 },
-    //                 {
-    //                     id: 2,
-    //                     data: '02sadd',
-    //                 },
-    //                 {
-    //                     id: 3,
-    //                     data: '03asdf343',
-    //                 },
-    //             ],
-    //             input: '',
-    //         };
-    //     },
-    //     computed: {
-    //         changeInput() {
-    //             return this.itemList.filter((item) => item.data.includes(this.input));
-    //         },
-    //     },
-    // });
-    new Vue({
-        el: '#app',
-        data: {
-        },
-        });
+            },
+        })
     </script>
+
+
+              <!-- return this.itemList.filter((item) => item.data.includes(this.input)); -->
+    
 </body>
 </html>
