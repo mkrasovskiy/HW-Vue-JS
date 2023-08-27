@@ -13,58 +13,97 @@ Vue.component('blog-details', {
 Vue.component('blogs-list', {
     data() {
         return {
-            articleArr: [],
-            bloglist: [
+            tags: [
                 {
                     id: 1,
                     tag: 'Kitchen',
-                    article: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'
+                    select: false,
                 },
                 {
                     id: 2,
                     tag: 'Bedroom',
-                    article: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'
+                    select: false,
                 },
                 {
                     id: 3,
                     tag: 'Building',
-                    article: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'
+                    select: false,
                 },
                 {
                     id: 4,
                     tag: 'Architecture',
-                    article: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'
+                    select: false,
                 },
                 {
                     id: 5,
                     tag: 'Kitchen Planning',
+                    select: false,
+                },
+            ],
+            bloglist: [
+                {
+                    id: 1,
+                    tag: ['Kitchen', 'Bedroom'],
+                    article: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'
+                },
+                {
+                    id: 2,
+                    tag: ['Building','Kitchen', 'Bedroom'],
+                    article: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'
+                },
+                {
+                    id: 3,
+                    tag: ['Kitchen Planning','Kitchen', 'Architecture'],
+                    article: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'
+                },
+                {
+                    id: 4,
+                    tag: ['Building', 'Bedroom'],
+                    article: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'
+                },
+                {
+                    id: 5,
+                    tag: ['Building','Architecture', 'Bedroom'],
                     article: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'
                 },
             ],
+            currentTag: '',
         };
     },
-    
+    methods: {
+        selectedTag(tag) {
+            this.currentTag = tag;
+        }
+    },
+    computed: {
+        filterArticle() {
+            if(this.currentTag === '') {
+                return this.bloglist;
+            }
+            return this.bloglist.filter((el) => el.tag.includes(this.currentTag.tag))
+        }
+    },
     template: `
         <div>
-            <button v-for="blog in bloglist" @click="">{{ blog.tag }}</button>
+            <button v-for="tag in tags" @click="selectedTag(tag)">{{ tag.tag }}</button>
             <h2>Design sprints are great</h2>
             <p>Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
-            <blog
-            v-for="blog in bloglist"
-            v-bind:key="blog.id"
-            v-bind:blog="blog"
-            ></blog>
+            <ul>
+                <blog
+                v-for="blog in filterArticle"
+                v-bind:key="blog.id"
+                v-bind:blog="blog"
+                ></blog>
+            </ul>
         </div>
     `,
 });
 Vue.component('blog', {
     props: ['blog'],    
     template: `
-        <div>
             
-            <ul>
-                <li v-bind:blog.article="this.textArticle">{{ blog.id }} {{ blog.article }}</li>
-            </ul>
-        </div>
+            
+                <li>{{ blog.id }} {{ blog.article }}</li>
+            
     `,
 });
