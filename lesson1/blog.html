@@ -50,12 +50,12 @@
         </header>
         <section class="bunner">
             <img class="bunner__img" src="img/Banner.jpg" alt="Banner" width="1920" height="356">
-            <div class="bunner__content" v-for="{article, news} in heading">
-                <h2 class="bunner__content_title">{{ article }} &amp;&nbsp;{{ news }}</h2>
+            <div class="bunner__content">
+                <h2 class="bunner__content_title">Articles &amp;&nbsp;News</h2>
                 <p class="bunner__content_txt">Home&nbsp;/ Blog</p>
             </div>
         </section>
-        <section class="blog center" id="app">
+        <section class="blog center">
             <article class="blog__latest-post">
                 <h2 class="blog__latest-post_title">Latest Post</h2>
                 <div class="blog__latest-post-wrp">
@@ -77,8 +77,8 @@
                 </div>
             </article>
             <section class="blog__news">
-                <div class="blog__news-title" v-for="{article, news} in heading">
-                    <h2 class="blog__heading_title">{{ article }} &amp;&nbsp;{{ news }}</h2>
+                <div class="blog__news-title">
+                    <h2 class="blog__heading_title">Articles &amp;&nbsp;News</h2>
                 </div>
                 <div class="blog__news-wrp">
                     <article class="blog__card">
