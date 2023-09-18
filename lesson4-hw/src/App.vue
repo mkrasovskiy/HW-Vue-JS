@@ -1,22 +1,25 @@
 <template>
   <div id="app">
-    <HomeComponent />
-    <BlogComponent />
-    <BlogDetailsComponent />
+    <!-- <HomeComponent /> -->
+    <!-- <BlogComponent /> -->
+    <!-- <BlogDetailsComponent /> -->
+    <ProjectComponent />
   </div>
 </template>
 
 <script>
-import HomeComponent from '../pages/HomeComponent.vue'
-import BlogComponent from '../pages/BlogComponent.vue'
-import BlogDetailsComponent from '../pages/BlogDetailsComponent.vue'
+// import HomeComponent from '../pages/HomeComponent.vue'
+// import BlogComponent from '../pages/BlogComponent.vue'
+// import BlogDetailsComponent from '../pages/BlogDetailsComponent.vue'
+import ProjectComponent from '../pages/ProjectComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HomeComponent,
-    BlogComponent,
-    BlogDetailsComponent
+    // HomeComponent,
+    // BlogComponent,
+    // BlogDetailsComponent,
+    ProjectComponent,
   }
 }
 </script>
@@ -26,6 +29,10 @@ export default {
   $fontText: 'Jost', sans-serif;
   $colorTitle: #292F36;
   $colorTxt: #4D5053;
+  * {
+        margin: 0;
+        padding: 0;
+    }
   a {
     color: $colorTitle;
     text-decoration: none;
