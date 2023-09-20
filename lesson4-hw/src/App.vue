@@ -3,7 +3,8 @@
     <!-- <HomeComponent /> -->
     <!-- <BlogComponent /> -->
     <!-- <BlogDetailsComponent /> -->
-    <ProjectComponent />
+    <!-- <ProjectComponent /> -->
+    <ProjectDetails />
   </div>
 </template>
 
@@ -11,7 +12,8 @@
 // import HomeComponent from '../pages/HomeComponent.vue'
 // import BlogComponent from '../pages/BlogComponent.vue'
 // import BlogDetailsComponent from '../pages/BlogDetailsComponent.vue'
-import ProjectComponent from '../pages/ProjectComponent.vue'
+// import ProjectComponent from '../pages/ProjectComponent.vue'
+import ProjectDetails from '../pages/ProjectDetails.vue'
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
     // HomeComponent,
     // BlogComponent,
     // BlogDetailsComponent,
-    ProjectComponent,
+    // ProjectComponent,
+    ProjectDetails
   }
 }
 </script>

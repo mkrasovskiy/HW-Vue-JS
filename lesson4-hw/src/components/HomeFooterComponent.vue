@@ -148,5 +148,5 @@ export default {
             line-height: 50px;
         }
     }
-}
+    }
 </style>

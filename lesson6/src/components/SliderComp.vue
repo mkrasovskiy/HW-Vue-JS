@@ -1,19 +1,15 @@
 <template>
     <div>
-        <OurProjects />
-        <SliderComp />
+        
     </div>
 </template>
 
 <script>
-import OurProjects from './OurProjects.vue'
-import SliderComp from './SliderComp.vue'
 export default {
-    name: 'ProjectComp',
+    name: 'SliderComp',
     components: {
-        OurProjects,
-        SliderComp
-    },
+    
+  },
     data() {
         return {
             
