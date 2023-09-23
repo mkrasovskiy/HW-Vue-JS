@@ -5,6 +5,10 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
+        
+                title: 'Minimal Look Bedrooms',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo.'
+        
         // начальное состояние
     },
     mutations: {
@@ -14,6 +18,8 @@ export default new Vuex.Store({
         // методы для асинхронных операций
     },
     getters: {
+        getTitle: (state) => state.title,
+        getDescription: (state) => state.description
         // методы для чтения состояния
     },
     modules: {

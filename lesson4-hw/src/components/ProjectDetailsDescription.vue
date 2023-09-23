@@ -1,9 +1,9 @@
 <template>
     <div class="project-details-description">
-        <h2 class="project-details-description__heading">Minimal Look Bedrooms</h2>
+        <h2 class="project-details-description__heading">{{ getTitle }}</h2>
         <p class="project-details-description__txt">
-            <span class="project-details-description__txt_span">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo.</span>
-            <span class="project-details-description__txt_span">In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.</span>
+            <span class="project-details-description__txt_span">{{ getDescription }}</span>
+            <span class="project-details-description__txt_span">{{ getDescription }}</span>
         </p>
         
     </div>
@@ -22,12 +22,13 @@ export default {
         };
     },
 
-    mounted() {
-        
-    },
-
-    methods: {
-        
+    computed: {
+        getTitle() {
+            return this.$store.getters.getTitle
+        },
+        getDescription() {
+            return this.$store.getters.getDescription
+        }
     },
 };
 </script>

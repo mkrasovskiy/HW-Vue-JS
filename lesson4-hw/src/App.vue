@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import { mapState, mapGetters } from 'vuex';
 // import HomeComponent from '../pages/HomeComponent.vue'
 // import BlogComponent from '../pages/BlogComponent.vue'
 // import BlogDetailsComponent from '../pages/BlogDetailsComponent.vue'
@@ -23,6 +24,10 @@ export default {
     // BlogDetailsComponent,
     // ProjectComponent,
     ProjectDetails
+  },
+  computed: {
+    ...mapState(['descriptionProject']),
+    ...mapGetters(['getTitle', 'getDescription'])
   }
 }
 </script>
