@@ -1,7 +1,6 @@
 <template>
     <div class="home">
         <LineComponent />
-        <HomeHeaderComponent />
         <HomePromoComponent />
         <HomeProjectsComponent />
         <HomeCounterComponent />
@@ -11,19 +10,17 @@
 </template>
 
 <script>
-import LineComponent from '../src/components/LineComponent.vue'
-import HomeHeaderComponent from '../src/components/HomeHeaderComponent.vue'
-import HomePromoComponent from '../src/components/HomePromoComponent.vue'
-import HomeProjectsComponent from '../src/components/HomeProjectsComponent.vue'
-import HomeCounterComponent from '../src/components/HomeCounterComponent.vue'
-import HomeBlogComponent from '../src/components/HomeBlogComponent.vue'
-import HomeFooterComponent from '../src/components/HomeFooterComponent.vue'
+import LineComponent from '../components/LineComponent.vue'
+import HomePromoComponent from '../components/HomePromoComponent.vue'
+import HomeProjectsComponent from '../components/HomeProjectsComponent.vue'
+import HomeCounterComponent from '../components/HomeCounterComponent.vue'
+import HomeBlogComponent from '../components/HomeBlogComponent.vue'
+import HomeFooterComponent from '../components/HomeFooterComponent.vue'
 
 export default {
     name: 'HomeComponent',
     components: {
         LineComponent,
-        HomeHeaderComponent,
         HomePromoComponent,
         HomeProjectsComponent,
         HomeCounterComponent,

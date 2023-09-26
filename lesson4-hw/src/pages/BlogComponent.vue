@@ -1,36 +1,26 @@
 <template>
-    <div>
+    <div class="blog">
         <BlogLineComponent />
-        <HomeHeaderComponent />
-        <ProjectBunner />
-        <ProjectsComp />
+        <BlogBunnerComponent />
+        <BlogBlogComponent />
         <HomeFooterComponent />
     </div>
 </template>
 
 <script>
-import BlogLineComponent from '../src/components/LineComponent.vue'
-import HomeHeaderComponent from '../src/components/HomeHeaderComponent.vue'
-import ProjectBunner from '../src/components/ProjectBunner.vue'
-import ProjectsComp from '../src/components/ProjectsComp.vue'
+import BlogLineComponent from '@/components/BlogLineComponent.vue';
+import BlogBunnerComponent from '@/components/BlogBunnerComponent.vue';
+import BlogBlogComponent from '@/components/BlogBlogComponent.vue';
 import HomeFooterComponent from '@/components/HomeFooterComponent.vue';
 
 export default {
-    name: 'ProjectComponent',
+    name: 'BlogComponent',
     components: {
-    HomeHeaderComponent,
-    BlogLineComponent,
-    ProjectBunner,
-    ProjectsComp,
-    HomeFooterComponent
-},
-    data() {
-        return {};
-    },
-    mounted() {
-    },
-    methods: {},
-    
+        BlogLineComponent,
+        BlogBunnerComponent,
+        BlogBlogComponent,
+        HomeFooterComponent
+}
 };
 </script>
 
@@ -58,8 +48,8 @@ export default {
         list-style: none;
     }
     .center {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
     }
 </style>
