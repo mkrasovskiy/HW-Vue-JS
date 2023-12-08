@@ -1,6 +1,6 @@
 <template>
     <div>
-        <BlogLineComponent />
+        <!-- <BlogLineComponent /> -->
         <HomeHeaderComponent />
         <BlogDetailsBunnerComponent />
         <BlogDetailsArticleComponent />
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import BlogLineComponent from '@/components/BlogLineComponent.vue';
+// import BlogLineComponent from '@/components/BlogLineComponent.vue';
 import HomeHeaderComponent from '@/components/HomeHeaderComponent.vue';
 import BlogDetailsBunnerComponent from '@/components/BlogDetailsBunnerComponent.vue';
 import BlogDetailsArticleComponent from '@/components/BlogDetailsArticleComponent.vue';
@@ -18,7 +18,7 @@ import HomeFooterComponent from '@/components/HomeFooterComponent.vue';
 export default {
     name: 'ArticleComponent',
     components: {
-    BlogLineComponent,
+    // BlogLineComponent,
     HomeHeaderComponent,
     BlogDetailsBunnerComponent,
     BlogDetailsArticleComponent,

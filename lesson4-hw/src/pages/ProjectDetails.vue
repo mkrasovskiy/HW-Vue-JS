@@ -1,6 +1,6 @@
 <template>
     <div>
-        <LineComponent />
+        <!-- <LineComponent /> -->
         <HomeHeaderComponent />
         <ProjectDetailsBunner />
         <ProjectDetailsContent />
@@ -11,7 +11,7 @@
 <script>
 import HomeFooterComponent from '@/components/HomeFooterComponent.vue';
 import HomeHeaderComponent from '@/components/HomeHeaderComponent.vue';
-import LineComponent from '@/components/LineComponent.vue';
+// import LineComponent from '@/components/LineComponent.vue';
 import ProjectDetailsBunner from '@/components/ProjectDetailsBunner.vue';
 import ProjectDetailsContent from '@/components/ProjectDetailsContent.vue'
 
@@ -19,7 +19,7 @@ export default {
     name: 'ProjectDetails',
     components: {
     HomeHeaderComponent,
-    LineComponent,
+    // LineComponent,
     ProjectDetailsBunner,
     ProjectDetailsContent,
     HomeFooterComponent

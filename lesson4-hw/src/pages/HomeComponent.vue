@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <LineComponent />
+        <!-- <LineComponent /> -->
         <HomePromoComponent />
         <HomeProjectsComponent />
         <HomeCounterComponent />
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import LineComponent from '../components/LineComponent.vue'
+// import LineComponent from '../components/LineComponent.vue'
 import HomePromoComponent from '../components/HomePromoComponent.vue'
 import HomeProjectsComponent from '../components/HomeProjectsComponent.vue'
 import HomeCounterComponent from '../components/HomeCounterComponent.vue'
@@ -20,7 +20,7 @@ import HomeFooterComponent from '../components/HomeFooterComponent.vue'
 export default {
     name: 'HomeComponent',
     components: {
-        LineComponent,
+        // LineComponent,
         HomePromoComponent,
         HomeProjectsComponent,
         HomeCounterComponent,

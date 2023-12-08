@@ -1,6 +1,6 @@
 <template>
     <div>
-        <BlogLineComponent />
+        <!-- <BlogLineComponent /> -->
         <ProjectBunner />
         <ProjectsComp />
         <HomeFooterComponent />
@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import BlogLineComponent from '../components/LineComponent.vue'
+// import BlogLineComponent from '../components/LineComponent.vue'
 import ProjectBunner from '../components/ProjectBunner.vue'
 import ProjectsComp from '../components/ProjectsComp.vue'
 import HomeFooterComponent from '@/components/HomeFooterComponent.vue';
@@ -16,7 +16,7 @@ import HomeFooterComponent from '@/components/HomeFooterComponent.vue';
 export default {
     name: 'ProjectComponent',
     components: {
-    BlogLineComponent,
+    // BlogLineComponent,
     ProjectBunner,
     ProjectsComp,
     HomeFooterComponent
